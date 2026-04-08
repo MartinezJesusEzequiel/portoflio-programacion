@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #1a252f;
+    color: #ffffff;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #34495e;
+    color: #3498db;
+}
+
+/* Styles for section wrappers (Educación, Sobre Mí) */
+section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+section p {
+    font-size: 1.1rem;
+}
+
+section ul {
+    line-height: 1.8;
+}
+
+/* Styles for unbound root elements (used in Contactos) */
+body > h1:not(header h1) {
+    max-width: 800px;
+    margin: 3rem auto 1rem auto;
+    text-align: center;
+    color: #2c3e50;
+}
+
+body > p:not(footer p) {
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+body > ul:not(nav ul) {
+    max-width: 600px;
+    margin: 0 auto 3rem auto;
+    background-color: #ffffff;
+    padding: 2rem 2rem 2rem 3rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    list-style-type: none;
+}
+
+body > ul:not(nav ul) li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+body > ul:not(nav ul) li:before {
+    content: "•";
+    color: #3498db;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+body > ul:not(nav ul) li a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+body > ul:not(nav ul) li a:hover {
+    color: #1a252f;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #1a252f;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: auto;
+}
+
+/* Estilos para el formulario de registro y contacto */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    font-weight: 500;
+    color: #2c3e50;
+    font-size: 1.1rem;
+}
+
+.form-group input {
+    padding: 0.8rem;
+    border: 1px solid #dcdde1;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: all 0.3s;
+    font-family: inherit;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.btn-submit {
+    background-color: #1e033f;
+    color: #ffffff;
+    border: none;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    margin-top: 0.5rem;
+}
+
+.btn-submit:hover {
+    background-color: #ffffff;
+}
+
+.btn-submit:active {
+    transform: scale(0.98);
+}

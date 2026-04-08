@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Portafolio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-mi.html">Sobre Mí</a></li>
+                <li><a href="educacion.html">Educación</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contactos.html">Contacto</a></li>
+                <li><a href="registro.html">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="registro">
+        <h2>Formulario de Registro</h2>
+        <p style="text-align: center; margin-bottom: 2rem;">Por favor, ingresa tus datos para crear una nueva cuenta.</p>
+        
+        <form action="#" method="POST" class="formulario">
+            <div class="form-group">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Ej: Juan Pérez">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required placeholder="tu@email.com">
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required placeholder="Crea una contraseña segura">
+            </div>
+            
+            <button type="submit" class="btn-submit">Registrarse Ahora</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Mi Portafolio</p>
+    </footer>
+</body>
+</html>
